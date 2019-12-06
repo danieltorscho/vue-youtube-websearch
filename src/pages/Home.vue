@@ -64,7 +64,6 @@ export default {
   methods: {
     onSearch: _.debounce(function () {
       YouTubeSearch({ key: this.api, term: this.keyword }, (videos) => {
-        console.log(videos)
         this.results = videos
       })
     }, 400)
