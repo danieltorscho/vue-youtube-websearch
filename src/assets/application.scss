@@ -1,0 +1,39 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+html {
+  background: url('./background.jpg') no-repeat 50% 0;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  // height: 632px;
+}
+body {
+  width: 100%;
+  // height: 100%;
+  margin: 0;
+  padding: 1em;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+  background: rgba(0, 0, 0, 0.25);
+}
+#app {
+  overflow: hidden;
+}
+.card-text {
+  max-height: 46px;
+}
+.playbtn {
+  position: absolute;
+  z-index: 1;
+  right: 25px;
+  bottom: 10px;
+  text-align: right;
+}
+.card {
+  .card-title {
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
