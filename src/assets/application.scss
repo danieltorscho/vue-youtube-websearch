@@ -1,7 +1,6 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
 html {
-  background: url('./background.jpg') no-repeat 50% 0;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -14,7 +13,7 @@ body {
   padding: 1em;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   color: #2c3e50;
-  background: rgba(0, 0, 0, 0.25);
+  background: #999;
 }
 #app {
   overflow: hidden;
@@ -55,6 +54,16 @@ body {
         margin: 0;
         padding: 0;
       }
+    }
+  }
+}
+
+body {
+  &.darkmode {
+    background: #000;
+    .card {
+      @extend .text-white;
+      @extend .bg-dark;
     }
   }
 }

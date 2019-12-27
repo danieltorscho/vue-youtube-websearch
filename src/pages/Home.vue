@@ -80,7 +80,7 @@ export default {
           link: 'https://www.youtube.com/watch?v=mbSXt_REE6A&list=PL51C850B5FE7B4DB4'
         }
       ],
-      keyword: '',
+      keyword: JSON.parse(localStorage.getItem('keyword')) || '',
       results: []
     }
   },
@@ -93,10 +93,17 @@ export default {
 
   methods: {
     onSearch: _.debounce(function () {
+      localStorage.setItem('keyword', JSON.stringify(this.keyword))
       YouTubeSearch({ key: this.api, term: this.keyword }, (videos) => {
         this.results = videos
       })
     }, 400)
+  },
+
+  mounted () {
+    if (this.keyword) {
+      this.onSearch()
+    }
   }
 }
 </script>
