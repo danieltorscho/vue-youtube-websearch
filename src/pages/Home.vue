@@ -45,7 +45,7 @@
             <img :src="item.image" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">{{ item.title }}</h5>
-              <a :href="item.link" class="btn btn-primary playbtn">Play</a>
+              <a :href="item.link" class="btn btn-primary playbtn btn-sm">Play</a>
             </div>
           </div>
         </div>
