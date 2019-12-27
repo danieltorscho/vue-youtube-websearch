@@ -67,17 +67,17 @@ export default {
         {
           title: 'Teklaaa',
           image: 'https://i.ytimg.com/vi/--kZEdjXcEI/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLARjHR0SrcC3XNb-8yEYcWm38n0rg',
-          link: 'https://www.youtube.com/watch?v=kiMpvEZ8DJ4&list=PLc9Dd6RmU_QncpqobxcyRc1cfI-07Cq55'
+          link: 'https://www.youtube.com/embed/?listType=playlist&list=PLc9Dd6RmU_QncpqobxcyRc1cfI-07Cq55'
         },
         {
           title: 'Oldies',
           image: 'https://i.ytimg.com/vi/Dl9iXBdJQtI/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC0IDDgjaVWumDMhQPUtozuIunvvQ',
-          link: 'https://www.youtube.com/watch?v=uyFpf9aG30A&list=PLc9Dd6RmU_QkDoAziDllzHh4rz5h5x2C9'
+          link: 'https://www.youtube.com/embed/?listType=playlist&list=PLc9Dd6RmU_QkDoAziDllzHh4rz5h5x2C9'
         },
         {
           title: 'Slovak',
           image: 'https://i.ytimg.com/vi/brT23KDweDk/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB96MTATjNYdPL-juWEzRHhsxyucg',
-          link: 'https://www.youtube.com/watch?v=mbSXt_REE6A&list=PL51C850B5FE7B4DB4'
+          link: 'https://www.youtube.com/embed/?listType=playlist&list=PL51C850B5FE7B4DB4'
         }
       ],
       keyword: JSON.parse(localStorage.getItem('keyword')) || '',
