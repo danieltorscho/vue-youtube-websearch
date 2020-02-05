@@ -62,7 +62,7 @@ import YouTubeSearch from 'youtube-api-search'
 export default {
   data () {
     return {
-      api: 'AIzaSyBHvNQW55VkxjNaP0tECyCpnkRBcEiNhIc',
+      api: 'PUT_YOUR_GOOGLE_YOUTUBE_API_HERE',
       playlist: [
         {
           title: 'Teklaaa',
