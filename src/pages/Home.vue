@@ -41,11 +41,15 @@
       </template>
       <template v-else>
         <div class="card-deck playlist">
-          <div class="card" v-for="(item, key) in playlist" :key="key">
-            <img :src="item.image" class="card-img-top">
-            <div class="card-body">
-              <h5 class="card-title">{{ item.title }}</h5>
-              <a :href="item.link" class="btn btn-primary playbtn btn-sm">Play</a>
+          <div class="row">
+            <div class="col-4 mb-5" v-for="(item, key) in playlist" :key="key">
+                <div class="card">
+                  <img :src="item.image" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">{{ item.title }}</h5>
+                    <a :href="item.link" class="btn btn-primary playbtn btn-sm">Play</a>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
@@ -73,6 +77,21 @@ export default {
           title: 'Oldies',
           image: 'https://i.ytimg.com/vi/Dl9iXBdJQtI/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC0IDDgjaVWumDMhQPUtozuIunvvQ',
           link: 'https://www.youtube.com/embed/?listType=playlist&list=PLc9Dd6RmU_QkDoAziDllzHh4rz5h5x2C9'
+        },
+        {
+          title: 'Shanson',
+          image: 'https://i.ytimg.com/vi/YXzS9DajdQ8/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAudpv1CnVPiV2MtxdWP21m-51b1A',
+          link: 'https://www.youtube.com/embed/?listType=playlist&list=PL1329C401520260DF'
+        },
+        {
+          title: 'Russian',
+          image: 'https://i.ytimg.com/vi/2-KcpAHFmg4/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAQ_CmlolPTFaml9889ZahHOLWoPQ',
+          link: 'https://www.youtube.com/embed/?listType=playlist&list=PL582CBFE5328AEB46'
+        },
+        {
+          title: 'Mixed',
+          image: 'https://i.ytimg.com/vi/3dCWaTw1Ejc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACWQkeiJPWXiXAz3kQ3j_t4UO9RQ',
+          link: 'https://www.youtube.com/embed/?listType=playlist&list=PL952C3281C4C79F3B'
         },
         {
           title: 'Slovak',
